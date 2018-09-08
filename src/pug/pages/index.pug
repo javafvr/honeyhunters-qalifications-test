@@ -21,8 +21,8 @@ html(lang="en")
 						.form__header.m-auto
 							img(src="img/letter-icon.png", alt="letter-icon")
 				form.form-comments
-					.row
-						.col-12.col-md-5
+					.row.mb-90
+						.form-group.col-12.col-md-5
 							.title-6 Имя 
 								span *
 							input(name="name")
@@ -33,16 +33,50 @@ html(lang="en")
 							.title-6 Комментарий 
 								span *
 							textarea(name="message")
+					.row.mb-90
+						.col-md-3.offset-md-9
+							input(type="submit" name="send-comment" value="Записать").button
 		.section-comments
 			.container
 				.row
-					.col-md-4
-					.col-md-4
-					.col-md-4
+					.title-2 Выводим комментарии
 				.row
-					.col-md-4
-					.col-md-4
-					.col-md-4
+					.col-md-4.comments
+						.comment
+							.comment__header Вася
+							.comment__body
+								.comment__email vasya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
+					.col-md-4.comments
+						.comment
+							.comment__header Маруся
+							.comment__body
+								.comment__email marusya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
+					.col-md-4.comments
+						.comment
+							.comment__header Вася
+							.comment__body
+								.comment__email vasya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
+					.col-md-4.comments
+						.comment
+							.comment__header Вася
+							.comment__body
+								.comment__email vasya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
+					.col-md-4.comments
+						.comment
+							.comment__header Маруся
+							.comment__body
+								.comment__email marusya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
+					.col-md-4.comments
+						.comment
+							.comment__header Вася
+							.comment__body
+								.comment__email vasya@mail.ru
+								.comment__message Сообщение от Василия Пупкина
 		footer.section-footer
 			.container
 				.row
